@@ -10,34 +10,38 @@
 
     <TextView
         android:id="@+id/cellView"
-        android:text="cell:"
+        android:text=" cell:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         />
 
     <TextView
         android:id="@+id/lacView"
-        android:text="lac:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:text=" lac:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         />
 
     <Button
         android:id="@+id/GSMpushButton"
-        android:text="@string/GPSpush"
+        android:text="@string/GSMpush"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         />
 
     <TextView
         android:id="@+id/gpsView"
-        android:text="gps:"
+        android:text=" gps:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         />
 
     <!--com.google.android.gms.maps.MapView
@@ -60,6 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
+        android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Title"
         />
 
 </LinearLayout>
