@@ -1,0 +1,20 @@
+# rewrite later
+app/
+*gradle*
+
+# vim temp files
+*~
+*.swp
+
+# local specific files
+local.properties
+
+# gradle generated
+.gradle/
+
+# Android Studio (Idea) configs & temp files
+.idea/
+*.iml
+
+# build files
+build/
