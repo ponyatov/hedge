@@ -1,7 +1,3 @@
-# rewrite later
-app/
-*gradle*
-
 # vim temp files
 *~
 *.swp
@@ -11,6 +7,11 @@ local.properties
 
 # gradle generated
 .gradle/
+gradle/wrapper/
+gradlew*
+build.gradle
+gradle.properties
+settings.gradle
 
 # Android Studio (Idea) configs & temp files
 .idea/
@@ -18,3 +19,6 @@ local.properties
 
 # build files
 build/
+
+# misc
+app/proguard-rules.pro
