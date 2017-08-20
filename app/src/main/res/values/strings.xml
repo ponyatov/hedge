@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="GSMpush">GSM push</string>
+    <string name="GPSpush">GPS push</string>
+</resources>
