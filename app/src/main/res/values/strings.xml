@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">GraphHedge</string>
+    <string name="app_name">Graph\nHedge</string>
     <string name="GSMpush">GSM push</string>
     <string name="GPSpush">GPS push</string>
-    <string name="geo_title">geolocation</string>
-    <string name="sensor_title">sensors</string>
+    <string name="geo_title">Geolocation</string>
+    <string name="sensor_title">Sensors</string>
+    <string name="graph_title">Graph</string>
+    <string name="config_title">Config</string>
 </resources>

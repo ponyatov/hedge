@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/miGeo"
+        android:icon="@drawable/geo"
+        android:title="@string/geo_title"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/miSensor"
+        android:icon="@drawable/sensor"
+        android:title="@string/sensor_title"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/miGraph"
+        android:icon="@drawable/neo4j"
+        android:title="@string/graph_title"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/miConfig"
+        android:icon="@drawable/config"
+        android:title="@string/config_title"
+        app:showAsAction="ifRoom|withText"
+        />
+</menu>
