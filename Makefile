@@ -1,5 +1,5 @@
 LOGO = paper-plane.svg
-#LOGO = hedgehog.png
+LOGO = hedgehog.png
 
 .PHONY: icons
 icons: \
