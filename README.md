@@ -16,7 +16,7 @@ covered by US Patents # TODO
 
 ### Credits
 
-<img src="icon/paper-plane.svg" width=48>
+<img src="icon/paper-plane.svg" width="48">
 Icons made by (https://www.flaticon.com/authors/flat-icons)[Flat Icons]
 from (https://www.flaticon.com/)[www.flaticon.com]
 is licensed by (http://creativecommons.org/licenses/by/3.0/)[CC 3.0 BY]
