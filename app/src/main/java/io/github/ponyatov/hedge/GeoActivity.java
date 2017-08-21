@@ -4,8 +4,13 @@ import android.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class GeoActivity extends AppCompatActivity {
+
+    private Button mGSMbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +24,14 @@ public class GeoActivity extends AppCompatActivity {
         bar.setDisplayShowHomeEnabled(true);
         bar.setLogo(R.drawable.geo);
         bar.setDisplayUseLogoEnabled(true);
+        // geo buttons
+        mGSMbutton = (Button) findViewById(R.id.GSMpushButton);
+        mGSMbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(GeoActivity.this,"push!",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
