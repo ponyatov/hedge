@@ -8,14 +8,13 @@ import android.hardware.SensorManager;
 import android.hardware.SensorEventListener;
 import android.os.Bundle;
 
-public class SensorActivity extends Activity implements SensorEventListener {
+public class SensorActivity extends AnyActivity implements SensorEventListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sensor);
+        super.onCreate(savedInstanceState,R.layout.activity_sensor,R.string.sensor_title,R.drawable.sensor);
         // reg on sensors
-        SensorManager mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+//        SensorManager mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
     }
 
     @Override
