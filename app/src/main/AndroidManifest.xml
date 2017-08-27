@@ -21,6 +21,10 @@
         <activity android:name=".SensorActivity"/>
         <activity android:name=".TaskActivity">
         </activity>
+        <activity
+            android:name=".ConfigActivity"
+            android:label="@string/title_activity_config">
+        </activity>
     </application>
 
 </manifest>
