@@ -64,7 +64,7 @@ public class GeoActivity extends AppCompatActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem pItem) {
 		switch (pItem.getItemId()) {
-			case R.id.miTask: startActivity(R.id.act)
+			//case R.id.miTask: startActivity(R.id.act)
 			default: return super.onOptionsItemSelected(pItem);
 		}
 	}
