@@ -5,6 +5,7 @@ import android.app.ActionBar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.menu.MenuBuilder;
 import android.telephony.CellLocation;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
@@ -57,6 +58,7 @@ public class GeoActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu pMenu) {
         getMenuInflater().inflate(R.menu.menu,pMenu);
+		if (pMenu instanceof MenuBuilder) ((MenuBuilder) pMenu).setOptionalIconsVisible(true);
         return true;
     }
 
