@@ -29,7 +29,7 @@ public class GeoActivity extends AppCompatActivity {
         // action bar
         android.support.v7.app.ActionBar bar = getSupportActionBar();
         // title
-        bar.setTitle("");//R.string.geo_title);
+        bar.setTitle(R.string.geo_title);
         // icon
         bar.setDisplayShowHomeEnabled(true);
         bar.setLogo(R.drawable.geo);
@@ -56,16 +56,19 @@ public class GeoActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu pMenu) {
-        boolean T = super.onCreateOptionsMenu(pMenu);
         getMenuInflater().inflate(R.menu.menu,pMenu);
-        return T;
+        return true;
     }
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem pItem) {
+//		Toast.makeText(GeoActivity.this,Integer.toString(pItem.getItemId()),Toast.LENGTH_LONG).show();
 		switch (pItem.getItemId()) {
-			//case R.id.miTask: startActivity(R.id.act)
-			default: return super.onOptionsItemSelected(pItem);
+			case R.id.miTask:
+				Toast.makeText(GeoActivity.this,"Task",Toast.LENGTH_LONG).show();
+				return true;
+			default:
+				return super.onOptionsItemSelected(pItem);
 		}
 	}
 }
