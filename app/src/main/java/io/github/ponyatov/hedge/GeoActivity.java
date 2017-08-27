@@ -9,6 +9,7 @@ import android.telephony.CellLocation;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -28,7 +29,7 @@ public class GeoActivity extends AppCompatActivity {
         // action bar
         android.support.v7.app.ActionBar bar = getSupportActionBar();
         // title
-        bar.setTitle(R.string.geo_title);
+        bar.setTitle("");//R.string.geo_title);
         // icon
         bar.setDisplayShowHomeEnabled(true);
         bar.setLogo(R.drawable.geo);
@@ -37,20 +38,34 @@ public class GeoActivity extends AppCompatActivity {
 //          Toast.makeText(GeoActivity.this,"push!",Toast.LENGTH_LONG).show();
         findViewById(R.id.GSMpushButton).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-//              Toast.makeText(GeoActivity.this,loc.toString(),Toast.LENGTH_LONG).show();
+            public void onClick(View pView) {
                 TelephonyManager tm = (TelephonyManager) getSystemService(getApplicationContext().TELEPHONY_SERVICE);
                 GsmCellLocation loc = (GsmCellLocation) tm.getCellLocation();
                 ((TextView) findViewById(R.id.cellView)).setText("cell:"+Integer.toHexString(loc.getCid()));
                 ((TextView) findViewById(R.id.lacView)).setText(" lac:"+Integer.toHexString(loc.getLac()));
             }
         });
+        // menu clicker
+//        findViewById(R.id.miTask).setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View pView) {
+//				//GeoActivity.this.setContentView(R.layout.activity_task);
+//			}
+//		});
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        boolean T = super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.menu,menu);
+    public boolean onCreateOptionsMenu(Menu pMenu) {
+        boolean T = super.onCreateOptionsMenu(pMenu);
+        getMenuInflater().inflate(R.menu.menu,pMenu);
         return T;
     }
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem pItem) {
+		switch (pItem.getItemId()) {
+			case R.id.miTask: startActivity(R.id.act)
+			default: return super.onOptionsItemSelected(pItem);
+		}
+	}
 }

@@ -2,6 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/miAdd"
+        android:icon="@drawable/alarm"
+        android:title="@string/add_title"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/miTask"
+        android:icon="@drawable/task"
+        android:title="@string/task_title"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
         android:id="@+id/miGeo"
         android:icon="@drawable/geo"
         android:title="@string/geo_title"
@@ -14,21 +26,15 @@
         app:showAsAction="ifRoom|withText"
         />
     <item
-        android:id="@+id/miTask"
-        android:icon="@drawable/task"
-        android:title="@string/task_title"
-        app:showAsAction="ifRoom|withText"
-        />
-    <item
         android:id="@+id/miGraph"
         android:icon="@drawable/neo4j"
         android:title="@string/graph_title"
-        app:showAsAction="ifRoom|withText"
+        app:showAsAction="never"
         />
     <item
         android:id="@+id/miConfig"
         android:icon="@drawable/config"
         android:title="@string/config_title"
-        app:showAsAction="ifRoom|withText"
+        app:showAsAction="never"
         />
 </menu>
