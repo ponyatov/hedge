@@ -14,6 +14,7 @@ icons: \
 	app/src/main/res/drawable/geo.png \
 	app/src/main/res/drawable/sensor.png \
 	app/src/main/res/drawable/neo4j.png \
+	app/src/main/res/drawable/task.png \
 	app/src/main/res/drawable/config.png \
 
 
