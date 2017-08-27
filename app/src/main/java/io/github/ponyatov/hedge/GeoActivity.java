@@ -23,7 +23,8 @@ public class GeoActivity extends AnyActivity {
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState,R.layout.activity_geo,R.string.geo_title,R.drawable.geo);
+        super.onCreate(savedInstanceState,
+				R.layout.activity_geo,R.string.geo_title,R.drawable.geo,R.id.miGeo);
 
         // ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
         

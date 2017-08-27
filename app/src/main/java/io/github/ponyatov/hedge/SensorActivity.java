@@ -12,7 +12,8 @@ public class SensorActivity extends AnyActivity implements SensorEventListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState,R.layout.activity_sensor,R.string.sensor_title,R.drawable.sensor);
+        super.onCreate(savedInstanceState,
+				R.layout.activity_sensor,R.string.sensor_title,R.drawable.sensor,R.id.miSensor);
         // reg on sensors
 //        SensorManager mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
     }

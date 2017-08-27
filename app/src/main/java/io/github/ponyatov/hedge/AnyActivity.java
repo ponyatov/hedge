@@ -9,9 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class AnyActivity extends AppCompatActivity {
-	protected void onCreate(Bundle savedInstanceState,int pActivity,int pTitle,int pLogo) {
+	private static int selfMenuItem;
+
+	protected void onCreate(Bundle savedInstanceState, int pActivity, int pTitle, int pLogo, int pMenuItem) {
 		super.onCreate(savedInstanceState);
 		setContentView(pActivity);
+		selfMenuItem = pMenuItem;
 
 		// action bar
 		ActionBar bar = getSupportActionBar();
@@ -34,7 +37,8 @@ public class AnyActivity extends AppCompatActivity {
 	public boolean onOptionsItemSelected(MenuItem pItem) {
 ////		Toast.makeText(GeoActivity.this,Integer.toString(pItem.getItemId()),Toast.LENGTH_LONG).show();
 //				Toast.makeText(GeoActivity.this,"Task",Toast.LENGTH_LONG).show();
-		switch (pItem.getItemId()) {
+		int mi = pItem.getItemId(); if (mi==selfMenuItem) return false;//super.onOptionsItemSelected(pItem);
+		switch (mi) {
 			case R.id.miTask:
 				startActivity(new Intent(this,TaskActivity.class));
 				return true;

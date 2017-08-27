@@ -7,7 +7,8 @@ public class TaskActivity extends AnyActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState,R.layout.activity_task,R.string.task_title,R.drawable.task);
+		super.onCreate(savedInstanceState,
+				R.layout.activity_task,R.string.task_title,R.drawable.task,R.id.miTask);
 	}
 
 }
