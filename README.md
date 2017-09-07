@@ -1,4 +1,4 @@
-# Graph Hedge
+# ![logo](icon/hedgehog.png) Graph Hedge
 ### (hyper)graph mobile client for Android devices
 
 This is light mobile version of hypergraph-based planning system includes:
