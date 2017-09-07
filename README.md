@@ -1,5 +1,5 @@
-# AndroidGraphDaemon
-### (hyper)graph daemon for Android mobile devices
+# Graph Hedge
+### (hyper)graph mobile client for Android devices
 
 This is light mobile version of hypergraph-based planning system includes:
 
@@ -10,9 +10,11 @@ This is light mobile version of hypergraph-based planning system includes:
 
 (c) Dmitry Ponyatov <<dponyatov@gmail.com>> , All rights reserved
 
-github: it is private project, targetted as graph driven programming demo application
+github: https://github.com/ponyatov/hedge
 
-covered by US Patents # TODO
+### Graph Driven Programming
+
+This project also targetted as [graph driven programming](https://docs.google.com/document/d/14VSoJ_uBVbhW9srTX11bw1-IfgROxWR6jvNRmVUO-ww/edit#heading=h.o9fkoxv5e1wo) demo application.
 
 ### Credits
 
@@ -20,3 +22,4 @@ covered by US Patents # TODO
 Icons made by (https://www.flaticon.com/authors/flat-icons)[Flat Icons]
 from (https://www.flaticon.com/)[www.flaticon.com]
 is licensed by (http://creativecommons.org/licenses/by/3.0/)[CC 3.0 BY]
+
